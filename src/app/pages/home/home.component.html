@@ -6,6 +6,10 @@
 	<app-new-post />
 </div>
 
-<div class="fixed bottom-0 m-auto w-full">
+<div class="flex flex-col items-center justify-center container mx-auto" *ngFor="let tw of tweets">
+	<app-tweet [TweetMessage]=tw />
+</div>
+
+<div class="bottom-0 m-auto w-full">
 	<app-footer />
 </div>
